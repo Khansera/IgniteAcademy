@@ -12,7 +12,7 @@ module.exports = {
     main: './src/main.js'
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].[contenthash].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -43,7 +43,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CssMinimizerPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[name].[contenthash].css',
     }),
   ],
 };
