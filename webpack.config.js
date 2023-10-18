@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -9,7 +8,8 @@ module.exports = {
   mode:'production',
   devtool: 'source-map',
   entry: {
-    main: './src/main.js'
+    main: './src/main.js',
+    chunk:'./src/script.js'
   },
   output: {
     filename: '[name].[contenthash].bundle.js',

@@ -12,6 +12,10 @@
     margin: 0;
     color: white;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .fontPrimary{
     color: #9b4dca!important;
 
@@ -49,7 +53,6 @@ scrollbar {
   scrollbar-thumb {
     background-color: grey; /* Change to your desired thumb color */
   }
-    
 /* Background */
 .bac{
     height: 100vh;
@@ -102,6 +105,13 @@ nav{
 }
 .navItem{
     padding: 20px;
+}
+.logo{
+    padding: 5px 10px!important;
+}
+.logo img{
+    height: 60px;
+    object-fit: cover;
 }
 /* MILIGRAM CUSTOMIZATION */
 .navLinks{
@@ -244,7 +254,6 @@ cursor: pointer;
     margin-top: -150px;
 }
 .courseCard {
-    height: 600px;
     border: 0.1px solid rgba(242, 237, 237, 0.497);
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
