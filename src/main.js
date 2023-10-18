@@ -106,8 +106,8 @@ document.querySelectorAll('.cValue').forEach((ele,index)=>{
 })
 })
 
-
 const navbar = document.querySelector('.navbar');
+const hero=document.querySelector('.hero');
 const logo=document.querySelectorAll('.navItem i')[0];
 const hamburgerIcon=document.querySelector('.hamburger i')
 const Navlinks=document.querySelectorAll('.navItem')[1];
@@ -164,19 +164,18 @@ close.addEventListener('click',()=>{
 
 
 //.............Media Qurey............//
-  window.addEventListener('resize', adjustBackgroundHeight);
-  window.addEventListener('load', adjustBackgroundHeight);
   
   function adjustBackgroundHeight() {
     const background = document.querySelector('.bac');
     const content = document.querySelector('.hero');
-    const navbar = document.querySelector('.navbar');
+    navbar.classList.remove('d-none');
+    hero.classList.remove('d-none');
     const contentHeight = content.offsetHeight;
     background.style.height = contentHeight + navbar.offsetHeight+120 + 'px';
     if(window.innerWidth >= 930){
       Navlinks.classList.remove('NavLinkOpen');
-    }else{
     }
   }
-
+  window.addEventListener('resize', adjustBackgroundHeight);
+  window.addEventListener('load', adjustBackgroundHeight);
 

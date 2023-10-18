@@ -28,6 +28,9 @@ label,input,textarea,option,select{
 .bacWhite{
     background: white;
 }
+.d-none{
+    display: none!important ;
+}
 /* Track (background) color */
 ::-webkit-scrollbar {
     background-color: #9b4dca; /* Change to your desired background color */
