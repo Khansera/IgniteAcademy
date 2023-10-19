@@ -8,8 +8,7 @@ module.exports = {
   mode:'production',
   devtool: 'source-map',
   entry: {
-    main: './src/main.js',
-    chunk:'./src/script.js'
+    main: './src/main.js'
   },
   output: {
     filename: '[name].[contenthash].bundle.js',
